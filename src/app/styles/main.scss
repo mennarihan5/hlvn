@@ -1,0 +1,16 @@
+
+// FONTS
+$font-inter: 'Inter' , sans-serif;
+
+// COLORS
+$primary: #07719D;
+$white: #FFFFFF;
+$disabled: rgba(255, 255, 255, 0.249);
+
+
+.globalStyles {
+    font-family: $font-inter;
+    margin: 0;
+    padding: 0;
+}
+

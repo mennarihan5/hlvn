@@ -1,0 +1,54 @@
+@import '../../styles/main.scss';
+
+.sigup-form {
+    width: 40rem;
+    margin: auto;
+}
+.inner-container {
+    width: 28.3rem;
+    margin: auto;
+    margin-top: -20%;
+}
+.titles-wrapper {
+    text-align: center;
+    width: 22rem;
+    line-height: 1.5rem;
+    margin: auto;
+    margin-bottom: -2%;
+}
+.title {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.desc {
+    font-weight: 400;
+    font-size: 1rem;
+}
+.upload-btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4%;
+    margin-bottom: 4%;
+}
+.upload-btn {
+    position: relative;
+}
+.upload-btn-icon {
+    position: absolute;
+    top: 53%;
+    left: 60%;
+    cursor: pointer;
+}
+.img-input-title {
+    font-weight: 500;
+    font-size: 0.87rem;
+    margin-bottom: -1%;
+}
+.img-input-text {
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
