@@ -6,13 +6,13 @@
 
 .sigup-form {
   width: 40rem;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .inner-container {
   width: 28.3rem;
-  margin: auto;
-  margin-top: -20%;
+  margin: 0 auto;
+  margin-top: 5%;
 }
 
 .titles-wrapper {
@@ -31,6 +31,7 @@
 .desc {
   font-weight: 400;
   font-size: 1rem;
+  color: #595959;
 }
 
 .upload-btn-wrapper {
@@ -65,4 +66,23 @@
 .input-field {
   display: flex;
   flex-direction: column;
+}
+
+.signup-btn {
+  background-color: #07719D;
+  width: 29.7rem;
+  font-size: 0.87rem;
+  color: #FFFFFF;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 3% 0;
+  margin-top: 3%;
+  cursor: pointer;
+}
+
+.country-wrapper,
+.job-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }/*# sourceMappingURL=styles.module.css.map */

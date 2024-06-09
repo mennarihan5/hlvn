@@ -30,30 +30,34 @@ const SignIn = () => {
 
     return (
         <div className={styles['signin-form']}>
-        <div>
-            <h2>Welcome Back!</h2>
-            <p>Been a while! Ready to dive back in? Let's get you signed in and back to business!</p>
-        </div>
-        <form onSubmit={handleSubmit(formSubmit)}>
-                <Input 
-                    type='text'
-                    id='email'
-                    label='Email Adress'
-                    placeholder='Enter your email address'
-                    register={{...register('username')}}
-                    // errorMessage={errors.email?.message}
-                />
-                <Input
-                    type='password'
-                    id='password'
-                    label='Password'
-                    placeholder='Enter your password'
-                    icon={<IoEyeOutline />}
-                    register={{...register('password')}}
-                    errorMessage={errors.password?.message}
-                />
-                <Button>Sign in</Button>
-            </form>
+            <div className={styles['inner-container']}>
+                <div className={styles['titles-wrapper']}>
+                <h2 className={styles.title}>Welcome Back!</h2>
+                <p className={styles.desc}>Been a while! Ready to dive back in? Let's get you signed in and back to business!</p>
+            </div>
+            <form onSubmit={handleSubmit(formSubmit)}>
+                    <Input 
+                        type='text'
+                        id='email'
+                        label='Email Adress'
+                        placeholder='Enter your email address'
+                        register={{...register('username')}}
+                        // errorMessage={errors.email?.message}
+                    />
+                    <Input
+                        type='password'
+                        id='password'
+                        label='Password'
+                        placeholder='Enter your password'
+                        icon={<IoEyeOutline />}
+                        register={{...register('password')}}
+                        errorMessage={errors.password?.message}
+                    />
+                    <Button className={styles['signin-btn']}>
+                        Sign in
+                    </Button>
+                </form>
+            </div>
         </div>
     )
 }
