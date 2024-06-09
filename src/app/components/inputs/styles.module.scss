@@ -4,3 +4,46 @@
     display: flex;
     flex-direction: column;
 }
+.label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1.5%;
+    color: $darkGrey;
+}
+.input {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 3%;
+    color:  $mediumGrey;
+    border: 1px solid $lightGrey;
+}
+.error-msg-wrapper {
+    color: red;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    gap: 1%;
+}
+.error-icon {
+    margin-top: 0.8%;
+    font-size: 1.3rem;
+}
+.input-field {
+    position: relative;
+    width: 100%;
+}
+.hide-icon {
+    position: absolute;
+    top: 23%;
+    left: 98%;
+    color: $mediumGrey;
+    font-size: 1.2rem;
+    cursor: pointer;
+}

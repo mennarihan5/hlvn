@@ -2,4 +2,46 @@
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.signin-form {
+  width: 40rem;
+  margin-top: 35%;
+}
+
+.inner-container {
+  width: 28.3rem;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.titles-wrapper {
+  text-align: center;
+  width: 22rem;
+  line-height: 1.5rem;
+  margin: auto;
+  margin-bottom: 7%;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #595959;
+}
+
+.signin-btn {
+  background-color: #07719D;
+  width: 29.7rem;
+  font-size: 0.87rem;
+  color: #FFFFFF;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 3% 0;
+  margin-top: 3%;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.module.css.map */

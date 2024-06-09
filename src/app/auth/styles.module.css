@@ -1,6 +1,27 @@
+.globalStyles {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 .form-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
+}
+
+.account {
+  font-weight: 400;
+  font-size: 0.87rem;
+  color: #8C8C8C;
+  text-align: center;
+  margin: 3% 0;
+}
+
+.signIn,
+.signUp {
+  font-weight: 500;
+  font-size: 0.87rem;
+  color: #454545;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.module.css.map */

@@ -8,7 +8,7 @@ import { useState } from 'react';
 const AuthPage = () => {
     const [isSignUp, setIsSignUp] = useState(false);
 
-    const HandleAuthToggle = (mode) => {
+    const handleAuthToggle = () => {
         setIsSignUp(!isSignUp);
     }
 
@@ -18,9 +18,17 @@ const AuthPage = () => {
                 {
                     isSignUp? <SignUp /> : <SignIn />
                 }
-                <button onClick={HandleAuthToggle}>
-                    {isSignUp ? 'Already Have an account? Sign In' : 'Don\'t have an account? Sign Up'}
-                </button>
+                <div className={styles.account} onClick={handleAuthToggle}>
+                    {isSignUp ? (
+                        <span className={styles['account-txt']}>
+                            Already have an account? <span className={styles.signIn}>Sign In</span>
+                        </span>
+                    ) : (
+                        <span className={styles['account-txt']}>
+                            Don't have an account? <span className={styles.signUp}>Sign Up</span>
+                        </span>
+                    )}
+                </div>
             </div>
             <div className={styles['image-wrapper']}>
                 <ImageSlider />

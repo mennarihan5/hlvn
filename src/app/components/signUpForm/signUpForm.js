@@ -10,17 +10,19 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { signUpApi } from '../../utilities/api/signup-signinAPI.js';
+import { IoAlertCircleOutline } from "react-icons/io5";
 
 const schema = yup.object({
-    fullname: yup.string().required('Please enter your full name'),
-    email: yup.string().required('Please enter your email address').email('Please enter a valid email address'),
-    phone: yup.string().required('Please enter your phone number').matches(/^01[0125][0-9]{8}$/, 'Please enter a valid phone number'),
-    password: yup.string().required('Please enter your password').min(8, 'Password must be at least 8 characters'),
-    jobFunction: yup.string().required('Please enter your job function')
+    fullname: yup.string().required('Please enter your full name!'),
+    email: yup.string().required('Please enter your email address!').email('Please enter a valid email address!'),
+    phone: yup.string().required('Please enter your phone number!').matches(/^01[0125][0-9]{8}$/, 'Please enter a valid phone number!'),
+    password: yup.string().required('Please enter your password!').min(8, 'Password must be at least 8 characters!'),
+    jobFunction: yup.string().required('Please enter your job function!')
 });
 
 const SignUp = () => {
     const inputRef = useRef();
+    
     const { handleSubmit, register, formState: {errors} } = useForm({
         resolver: yupResolver(schema)
     });
@@ -67,6 +69,7 @@ const SignUp = () => {
                         placeholder='Enter your full name'
                         register={{...register('fullname')}}
                         errorMessage={errors.fullname?.message}
+                        errorIcon={<IoAlertCircleOutline />}
                     />
                     <Input 
                         type='email'
@@ -75,6 +78,7 @@ const SignUp = () => {
                         placeholder='Enter your email address'
                         register={{...register('email')}}
                         errorMessage={errors.email?.message}
+                        errorIcon={<IoAlertCircleOutline />}
                     />
                     <Input
                         type='tel'
@@ -83,6 +87,7 @@ const SignUp = () => {
                         placeholder='Enter your Phone number'
                         register={{...register('phone')}}
                         errorMessage={errors.phone?.message}
+                        errorIcon={<IoAlertCircleOutline />}
                     />
                     <div className={styles['country-wrapper']}>
                         <Input 
@@ -91,13 +96,15 @@ const SignUp = () => {
                             label='Country'
                             placeholder='Enter your country'
                             register={{...register('country')}}
+                            className={styles.country}
                         />
                         <Input 
                             type='text' 
-                            id='City'
-                            label='city' 
+                            id='city'
+                            label='City' 
                             placeholder='Enter your City'
                             register={{...register('city')}}
+                            className={styles.city}
                         />  
                     </div>
                     <Input
@@ -115,6 +122,7 @@ const SignUp = () => {
                             placeholder='Enter your job function'
                             register={{...register('jobFunction')}}
                             errorMessage={errors.jobFunction?.message}
+                            errorIcon={<IoAlertCircleOutline />}
                         />
                         <Input
                             type='text'
@@ -132,8 +140,9 @@ const SignUp = () => {
                         icon={<IoEyeOutline />}
                         register={{...register('password')}}
                         errorMessage={errors.password?.message}
+                        errorIcon={<IoAlertCircleOutline />}
                     />
-                <Button>
+                <Button className={styles['signup-btn']}>
                     Sign Up
                 </Button>
                 </form>
