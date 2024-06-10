@@ -5,6 +5,7 @@ import Image from 'next/image';
 import ImgSlider1 from '../../assets/images/imgSlider1.png';
 import ImgSlider2 from '../../assets/images/imgSlider2.png';
 import BackgroundImg from '../../assets/images/background.png';
+import Logo from '../../assets/images/logo.png';
 import { useState } from'react';
 
 const ImageSlider = () => {
@@ -19,6 +20,9 @@ const ImageSlider = () => {
         <div className={styles['img-slider-container']}>
             <div className={styles['inner-container']}>
                 <CarouselProvider naturalSlideWidth={100} naturalSlideHeight={125} totalSlides={2} className={styles['carousel-wrapper']}>
+                    <div className={styles['logo-wrapper']}>
+                        <Image className={styles.logo} src={Logo} alt='Logo' />
+                    </div>
                     <Slider className={styles['img-slide-wrapper']}>
                         <Slide className={styles['img-slide1']} index={0}>
                             <Image className={styles['img-one']} src={ImgSlider1} alt='Image Slider 1' layout='fill' />
