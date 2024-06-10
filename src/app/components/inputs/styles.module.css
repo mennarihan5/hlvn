@@ -18,7 +18,7 @@
 
 .input {
   width: 100%;
-  padding: 0.7rem;
+  padding: 0.5rem;
   border-radius: 0.5rem;
   outline: none;
   font-size: 1rem;
@@ -30,10 +30,11 @@
 
 .error-msg-wrapper {
   color: red;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 400;
   font-family: "Inter", sans-serif;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
+  margin-top: -3%;
   display: flex;
   align-items: center;
   gap: 1%;
@@ -41,7 +42,7 @@
 
 .error-icon {
   margin-top: 0.8%;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .input-field {
@@ -51,7 +52,7 @@
 
 .hide-icon {
   position: absolute;
-  top: 23%;
+  top: 19%;
   left: 98%;
   color: #8C8C8C;
   font-size: 1.2rem;

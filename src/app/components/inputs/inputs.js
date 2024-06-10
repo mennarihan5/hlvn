@@ -1,20 +1,32 @@
 import styles from './styles.module.scss';
+import { IoEyeOutline, IoEyeOffOutline } from "react-icons/io5";
+import { useState } from 'react';
 
 
 const Input = (props) => {
     const {id, label, placeholder, type, icon, btn, register, errorMessage, errorIcon, className} = props
-    // const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+    const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
-    // const togglePasswordVisibility = () => {
-    //     setIsPasswordVisible(!isPasswordVisible);
-    // }
+    const togglePasswordVisibility = () => {
+        setIsPasswordVisible(!isPasswordVisible);
+    }
 
     return (
         <div className={styles['input-group']}>
             <label className={styles.label} htmlFor={id}>{label}</label>
             <div className={styles['input-field']}>
-                <input className={`${styles.input} ${className}`} type={type} id={id} placeholder={placeholder} {...register} />
-                <span className={styles['hide-icon']}>{icon}</span>
+                <input
+                    className={`${styles.input} ${className}`}
+                    type={isPasswordVisible ? 'text' : type}
+                    id={id}
+                    placeholder={placeholder}
+                    {...register}
+                />
+                {type === 'password' && (
+                    <span className={styles['hide-icon']} onClick={togglePasswordVisibility}>
+                        {isPasswordVisible ? <IoEyeOffOutline /> : <IoEyeOutline />}
+                    </span>
+                )}
             </div>
             {
                 errorMessage && (

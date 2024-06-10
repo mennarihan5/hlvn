@@ -123,6 +123,7 @@ const SignUp = () => {
                             register={{...register('jobFunction')}}
                             errorMessage={errors.jobFunction?.message}
                             errorIcon={<IoAlertCircleOutline />}
+                            className={styles.job}
                         />
                         <Input
                             type='text'
@@ -130,6 +131,7 @@ const SignUp = () => {
                             label='what’s your job role?'
                             placeholder='Enter your job role'
                             register={{...register('jobRole')}}
+                            className={styles.job}
                         />
                     </div>
                     <Input

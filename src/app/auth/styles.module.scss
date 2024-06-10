@@ -3,6 +3,7 @@
 .form-container {
     display: flex;
     justify-content: center;
+    // align-items: stretch;
     width: 100%;
 }
 .account {
@@ -10,7 +11,7 @@
     font-size: 0.87rem;
     color: $mediumGrey;
     text-align: center;
-    margin: 3% 0;
+    margin: 1.7% 0;
 }
 .signIn,
 .signUp {

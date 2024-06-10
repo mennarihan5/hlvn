@@ -12,7 +12,7 @@
 .inner-container {
   width: 28.3rem;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 .titles-wrapper {
@@ -20,7 +20,7 @@
   width: 22rem;
   line-height: 1.5rem;
   margin: auto;
-  margin-bottom: -2%;
+  margin-bottom: -5%;
 }
 
 .title {
@@ -38,7 +38,7 @@
   display: flex;
   align-items: center;
   gap: 4%;
-  margin-bottom: 4%;
+  margin-bottom: 3%;
 }
 
 .upload-btn {
@@ -76,7 +76,7 @@
   border-radius: 0.5rem;
   border: none;
   padding: 3% 0;
-  margin-top: 3%;
+  margin-top: 1%;
   cursor: pointer;
 }
 
@@ -84,5 +84,14 @@
 .job-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 28.3rem;
+  gap: 3%;
+}
+
+.country {
+  width: 14.5rem;
+}
+
+.job {
+  width: 13.2rem;
 }/*# sourceMappingURL=styles.module.css.map */
