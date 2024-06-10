@@ -10,12 +10,20 @@
     position: relative;
     width: 45rem;
     border-radius: 0.75rem;
-    height: 55rem;
+    height: 56rem;
 }
 .carousel-wrapper {
     position: relative;
     width: 100%;
     height: 100%;
+}
+.logo-wrapper {
+    width: 12%;
+    margin: 3%;
+}
+.logo {
+    width: 100%;
+    z-index: 100;
 }
 // .background-img-wrapper {
 //     width: 100%;
@@ -33,12 +41,15 @@
     width: 100%;
     height: 100%;
     border-radius: 0.75rem;
+    position: absolute;
+    top: -11.1%;
 }
 .img-slide1, 
 .img-slide2 {
     // width: 100%;
     // height: 100%;
     // object-fit: cover;
+    
 }
 .img-one, 
 .img-two {
