@@ -6,20 +6,32 @@ import ImgSlider1 from '../../assets/images/imgSlider1.png';
 import ImgSlider2 from '../../assets/images/imgSlider2.png';
 import BackgroundImg from '../../assets/images/background.png';
 import Logo from '../../assets/images/logo.png';
-import { useState } from'react';
+import { useEffect, useState } from'react';
 
-const ImageSlider = () => {
+const ImageSlider = ({isSignUp}) => {
+    const [currentSlide, setCurrentSlide] = useState(0);
     const [activeButton, setActiveButton] = useState(null);
 
-    const btnColorHandler = (buttonType) => {
-        setActiveButton(activeButton === buttonType ? null : buttonType);
-    };
+    useEffect(() => {
+        const newSlide = isSignUp ? 1 : 0;
+        setCurrentSlide(newSlide);
+        setActiveButton(newSlide === 0 ? 'back' : 'next');
+    }, [isSignUp])
 
+     const handleSlideChange = (slideIndex) => {
+        setCurrentSlide(slideIndex);
+        const buttonType = slideIndex === 0 ? 'back' : 'next';
+        setActiveButton(buttonType);
+    }
+
+    // const btnColorHandler = (buttonType) => {
+    //     setActiveButton(activeButton === buttonType ? null : buttonType);
+    // };
 
     return (
         <div className={styles['img-slider-container']}>
             <div className={styles['inner-container']}>
-                <CarouselProvider naturalSlideWidth={100} naturalSlideHeight={125} totalSlides={2} className={styles['carousel-wrapper']}>
+                <CarouselProvider naturalSlideWidth={100} naturalSlideHeight={125} totalSlides={2} className={styles['carousel-wrapper']} currentSlide={currentSlide}>
                     <div className={styles['logo-wrapper']}>
                         <Image className={styles.logo} src={Logo} alt='Logo' />
                     </div>
@@ -32,10 +44,10 @@ const ImageSlider = () => {
                         </Slide>
                     </Slider>
                     <div className={styles['btns-wrapper']}>
-                        <ButtonBack onClick={() => btnColorHandler('back')} 
+                        <ButtonBack onClick={() => handleSlideChange(0)}
                         className={`${styles['btn-back']} ${activeButton === 'back' ? styles['btn-color'] : ''}`}>
                         </ButtonBack>
-                        <ButtonNext onClick={() => btnColorHandler('next')}
+                        <ButtonNext onClick={() => handleSlideChange(1)} 
                         className={`${styles['btn-next']} ${activeButton === 'next' ? styles['btn-color'] : ''}`}>
                         </ButtonNext>
                     </div>

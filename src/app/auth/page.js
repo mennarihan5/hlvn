@@ -31,7 +31,7 @@ const AuthPage = () => {
                 </div>
             </div>
             <div className={styles['image-wrapper']}>
-                <ImageSlider />
+                <ImageSlider isSignUp={isSignUp} />
             </div>
         </div>
     )
