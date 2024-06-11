@@ -74,6 +74,7 @@
   background-color: rgba(255, 255, 255, 0.249);
   border-radius: 15px;
   cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
 }
 
 .btn-color {
@@ -96,4 +97,5 @@
 .text-desc {
   font-weight: 400;
   font-size: 1.125rem;
+  line-height: 1.5;
 }/*# sourceMappingURL=styles.module.css.map */
