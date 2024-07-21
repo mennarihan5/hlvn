@@ -1,0 +1,44 @@
+.globalStyles {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-container, .nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-container {
+  gap: 5%;
+}
+
+.nav-list {
+  list-style-type: none;
+  background-color: #F8F9FA;
+  padding: 0 3%;
+  border-radius: 6.25rem;
+  width: 38rem;
+  height: 3.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-item {
+  color: #8C8C8C;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+.list-item:hover {
+  background-color: #E1F4FD;
+  color: #0A5D7F;
+  padding: 2%;
+  margin: -2%;
+  border-radius: 5rem;
+}/*# sourceMappingURL=styles.module.css.map */

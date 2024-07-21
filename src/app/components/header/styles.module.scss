@@ -1,0 +1,12 @@
+@import '../../styles/main.scss';
+
+.header-container {
+    @include dFlex(row, space-between, center);
+    width: 98%;
+    height: 5.8rem;
+    margin: 2% auto;
+    padding: 0 1%;
+    gap: 2%;
+    background-color: $white;
+    border-radius: 6.25rem;
+}

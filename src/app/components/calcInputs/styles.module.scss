@@ -1,0 +1,28 @@
+@import '../../styles/main.scss';
+
+.calcInputs-wrapper {
+    @include dFlex(column, center, start);
+    margin-bottom: 2%;
+}
+.calc-label {
+    color: $darkGrey;
+    font-weight: 500;
+    margin-bottom: 3%;
+}
+.calc-input {
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid $lightGrey;
+    width: 14rem;
+}
+.calcInputs-wrapper input[type="number"]::-webkit-inner-spin-button,
+.calcInputs-wrapper input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.calcInputs-wrapper input[type="number"] {
+    -moz-appearance: textfield !important; 
+    appearance: textfield !important;
+    margin: 0;
+  }

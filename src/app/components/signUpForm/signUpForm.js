@@ -12,6 +12,8 @@ import * as yup from 'yup';
 import { signUpApi } from '../../utilities/api/signup-signinAPI.js';
 import { IoAlertCircleOutline } from "react-icons/io5";
 
+import { useDispatch, useSelector } from 'react-redux';
+
 const schema = yup.object({
     fullname: yup.string().required('Please enter your full name!'),
     email: yup.string().required('Please enter your email address!').email('Please enter a valid email address!'),

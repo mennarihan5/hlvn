@@ -1,0 +1,103 @@
+.globalStyles {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.quantity-calc-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contents-title {
+  margin-top: -2%;
+}
+
+.pack-content-container {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  width: 53rem;
+  height: 10rem;
+  padding: 4%;
+  margin-bottom: 2%;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.input {
+  margin-top: 6%;
+}
+
+.drug-name-input {
+  margin-top: 0;
+  height: 0.9rem;
+}
+
+.options {
+  position: absolute;
+  left: 9rem;
+  top: 1.7rem;
+  height: 48%;
+  padding-left: 2%;
+  border: none;
+  border-left: 1px solid #D9D9D9;
+  background: none;
+  cursor: pointer;
+  color: #0A5D7F;
+  font-weight: 600;
+}
+
+.inputs-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.inputs-row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.toggle-btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2%;
+  margin-left: 5%;
+  gap: 2%;
+  width: 50%;
+}
+
+.label {
+  color: #454545;
+  font-weight: 500;
+}
+
+.options-menu {
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #D9D9D9;
+  width: 14rem;
+}
+
+.select-title {
+  justify-content: space-around;
+  border-left: 1px solid #D9D9D9;
+  height: 2rem;
+  padding-left: 0.5rem;
+}/*# sourceMappingURL=styles.module.css.map */

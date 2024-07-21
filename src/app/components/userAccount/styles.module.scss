@@ -1,0 +1,36 @@
+@import '../../styles/main.scss';
+
+.user-account-container {
+    @include dFlex(row, space-between, center);
+    gap: 7%;
+}
+.profile {
+    @include dFlex(row, space-between, center);
+    gap: 2%;
+    background-color: $superLightGrey;
+    border-radius: 6.25rem;
+    width: 17.5rem;
+    height: 3.5rem;
+    padding: 1% 3%;
+}
+.notification {
+    background-color: $superLightGrey;
+    width: 1.3rem;
+    height: 1.3rem;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.profile-username {
+    margin-top: 11%;
+    margin-bottom: -5%;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.profile-email {
+    font-size: 0.875rem;
+    color: $lightGrey2;
+}
+.dots {
+    cursor: pointer;
+}

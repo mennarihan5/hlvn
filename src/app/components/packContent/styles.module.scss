@@ -1,0 +1,75 @@
+@import '../../styles/main.scss';
+
+.quantity-calc-container {
+    @include dFlex(row, space-between, center);
+}
+.contents-title {
+    margin-top: -2%;
+}
+.pack-content-container {
+    background-color: $white;
+    border-radius: 8px;
+    width: 53rem;
+    height: 10rem;
+    padding: 4%;
+    margin-bottom: 2%;
+}
+.input-wrapper {
+    @include dFlex(row, space-between, center);
+    margin-bottom: 2%;
+} 
+.input {
+    margin-top: 6%;
+}
+.drug-name-input {
+    margin-top: 0;
+    height: 0.9rem;
+} 
+.options {
+  position: absolute;
+  left: 9rem;
+  top: 1.7rem;
+  height: 48%;
+  padding-left: 2%;
+  border: none;
+  border-left: 1px solid $lightGrey;
+  background: none;
+  cursor: pointer;
+  color: $secondary;
+  font-weight: 600;
+}
+.inputs-row {
+  @include dFlex(row, space-between, center);
+  flex-wrap: nowrap;
+}
+.inputs-row2 {
+  @include dFlex(row, normal, center);
+  flex-wrap: nowrap;
+}
+.toggle-btn-wrapper {
+  @include dFlex(row, space-evenly, center);
+  margin-top: 2%;
+  margin-left: 5%;
+  gap: 2%;
+  width: 50%;
+}
+
+.label {
+  color: $darkGrey;
+  font-weight: 500;
+}
+.options-menu{
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid $lightGrey;
+  width: 14rem;
+}
+.units-per-pack, .units-concen {
+
+}
+.select-title {
+    justify-content: space-around;
+    border-left: 1px solid $lightGrey;
+    height: 2rem;
+    padding-left: 0.5rem;
+}
