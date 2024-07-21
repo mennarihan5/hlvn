@@ -1,0 +1,20 @@
+.globalStyles {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  height: 5.8rem;
+  margin: 2% auto;
+  padding: 0 1%;
+  gap: 2%;
+  background-color: #FFFFFF;
+  border-radius: 6.25rem;
+}/*# sourceMappingURL=styles.module.css.map */

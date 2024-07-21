@@ -3,6 +3,8 @@ $font-inter: 'Inter' , sans-serif;
 
 // COLORS
 $primary: #07719D;
+$secondary: #0A5D7F;
+$lightBlue: #E1F4FD;
 $white: #FFFFFF;
 $disabled: rgba(255, 255, 255, 0.249);
 $mediumGrey: #8C8C8C;
@@ -10,6 +12,8 @@ $lightGrey: #D9D9D9;
 $darkGrey: #454545;
 $mediumGrey2: #595959;
 $darkGrey2: #232323;
+$lightGrey2: #9AA0A6;
+$superLightGrey: #F8F9FA;
 
 
 
@@ -17,5 +21,13 @@ $darkGrey2: #232323;
     font-family: $font-inter;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin dFlex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
 }
 

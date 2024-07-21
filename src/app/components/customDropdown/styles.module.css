@@ -1,0 +1,54 @@
+.globalStyles {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dropdown-container {
+  position: relative;
+  width: 7rem;
+  margin-left: -7rem;
+  margin-top: 1.3rem;
+}
+
+.select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  color: #0A5D7F;
+  font-weight: 500;
+  top: -0.9rem;
+  left: 1.5rem;
+  width: 70%;
+}
+
+.selected-items {
+  position: absolute;
+  background-color: #F8F9FA;
+  color: #0A5D7F;
+  border: none;
+  border-radius: 8px;
+  z-index: 99;
+  width: 100%;
+  top: 1.5rem;
+  text-align: center;
+}
+
+.option-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.option-item:hover {
+  background-color: #E1F4FD;
+}
+
+.arrow-down {
+  position: absolute;
+  right: 8%;
+  top: 26%;
+}/*# sourceMappingURL=styles.module.css.map */

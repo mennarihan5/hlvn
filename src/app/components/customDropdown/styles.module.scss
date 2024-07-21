@@ -1,0 +1,42 @@
+@import '../../styles/main.scss';
+
+.dropdown-container {
+    position: relative;
+    width: 7rem;
+    margin-left: -7rem;
+    margin-top: 1.3rem;
+}
+.select {
+    @include dFlex(row, space-between, center);
+    position: absolute;
+    // border-left: 1px solid $lightGrey;
+    cursor: pointer;
+    color: $secondary;
+    font-weight: 500;
+    top: -0.9rem;
+    left: 1.5rem;
+    width: 70%;   
+}
+.selected-items {
+    position: absolute;
+    background-color: $superLightGrey;
+    color: $secondary;
+    border: none;
+    border-radius: 8px;
+    z-index: 99;
+    width: 100%;
+    top: 1.5rem;
+    text-align: center;
+}
+.option-item {
+    padding: 10px;
+    cursor: pointer;
+}
+.option-item:hover {
+    background-color: $lightBlue;
+}
+.arrow-down {
+    position: absolute;
+    right: 8%;
+    top: 26%;
+}
