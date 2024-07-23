@@ -2,4 +2,47 @@
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+.calc-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 22rem;
+  height: 42.3rem;
+  background-color: #FFFFFF;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.title-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 95%;
+  gap: 3%;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #0A5D7F;
+}
+
+.calc-img {
+  width: 75%;
+}
+
+.image {
+  width: 100%;
+}
+
+.calc-img-txt {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #0A5D7F;
+  text-align: center;
 }/*# sourceMappingURL=styles.module.css.map */

@@ -2,4 +2,6 @@
 
 .quantity-calc-container {
     @include dFlex(row, space-between, center);
+    width: 100%;
+    gap: 5%;
 }

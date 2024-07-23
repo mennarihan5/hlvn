@@ -9,9 +9,6 @@ import { useSelector } from 'react-redux';
 const QuantityCalc = () => {
   const showResults = useSelector((state) => state.quantityCalculator.showResults);
 
- 
-
-
   return (
     <div className={styles['quantity-calc-container']}>
         <div className={styles['quantity-calc']}>

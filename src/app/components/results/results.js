@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './styles.module.scss';
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 const Results = () => {
     const [showResults, setShowResults] = useState(true);
@@ -13,7 +13,7 @@ const Results = () => {
         <div className={styles['title-wrapper']}>
             <h3 className={styles['results-title']}>Result</h3>
             <div className={styles['arrow-icon']} onClick={handleShowResults}>
-                <IoIosArrowDown />
+                {showResults ? <IoIosArrowUp /> : <IoIosArrowDown />}
             </div>
         </div>
         {

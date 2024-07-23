@@ -8,11 +8,11 @@
 }
 .protocol-inputs-container {
     background-color: $white;
-    border-radius: 8px;
-    width: 53rem;
-    height: 21rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 51.5rem;
+    height: 23.8rem;
     padding: 4%;
-    margin-bottom: 5%;
 }
 .input-wrapper {
     display: flex;
@@ -63,8 +63,11 @@
 .row-3 {
   gap: 2%;
 }
-.admin-freq-input, .admin-freq-input, .cycles-num-input {
-  width: 16rem;
+.every-input {
+
+}
+.every-input, .admin-freq-input, .cycles-num-input {
+  width: 14.8rem;
 }
 .admin-freq-type {
   
