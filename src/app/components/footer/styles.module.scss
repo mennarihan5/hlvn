@@ -2,4 +2,43 @@
 
 .footer-contianer {
     @include dFlex(row, space-between, center);
+    // border-top: 1px solid $lightGrey;
+    // border-top-left-radius: 8px;
+    // border-top-right-radius: 8px;
+    height: 1rem;
+    // z-index: 1000;
+    padding: 3% 2% 1.5% 2%;
+}
+.reset-save-wrapper {
+    @include dFlex(row, space-between, center);
+    gap: 10%;
+}  
+.reset, .save {
+    width: 5rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.87rem;
+    cursor: pointer;
+}
+.reset {
+    background-color: $white;
+    border: 1px solid $darkBlue;
+    color: $darkBlue;
+}
+.save {
+    background-color: $darkBlue;
+    color: $white;
+}
+.calculate {
+    width: 8.3rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: $secondary;
+    color: $white;
+    font-weight: 600;
+    font-size: 0.87rem;
+    cursor: pointer;
 }

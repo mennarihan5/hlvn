@@ -19,7 +19,7 @@
 .pack-content-container {
   background-color: #FFFFFF;
   border-radius: 8px;
-  width: 53rem;
+  width: 51.5rem;
   height: 10rem;
   padding: 4%;
   margin-bottom: 2%;
@@ -100,4 +100,44 @@
   border-left: 1px solid #D9D9D9;
   height: 2rem;
   padding-left: 0.5rem;
+}
+
+.toggle-btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+}
+
+.toggle-btn {
+  -webkit-appearance: none;
+  position: relative;
+  background-color: #013D41;
+  width: 2.25rem;
+  height: 1.25rem;
+  border-radius: 1.25rem;
+}
+
+.toggle-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 48.5%;
+  transform: translate(0, -50%);
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:checked::before {
+  left: 7%;
+}
+
+.toggle-btn-text {
+  font-weight: 500;
+  font-size: 0.87rem;
 }/*# sourceMappingURL=styles.module.css.map */

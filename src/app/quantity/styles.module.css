@@ -6,6 +6,10 @@
 }
 
 .quantity-page-container {
+  width: 100%;
+}
+
+.wrapper-one {
   background-color: #F8F9FA;
   padding: 0.1% 2%;
   margin: -1%;

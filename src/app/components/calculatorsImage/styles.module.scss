@@ -1,2 +1,34 @@
 @import '../../styles/main.scss';
 
+.calc-img-container {
+    @include dFlex(column, start, center);
+    width: 22rem;
+    height: 42.3rem;
+    background-color: $white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    // background-color: pink;
+}
+
+.title-wrapper {
+    @include dFlex(row, start, center);
+    width: 95%;
+    gap: 3%;
+}
+.title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: $secondary;
+}
+.calc-img {
+    width: 75%;
+}
+.image {
+    width: 100%;
+}
+.calc-img-txt {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: $secondary;
+    text-align: center;
+}

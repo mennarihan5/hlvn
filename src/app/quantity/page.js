@@ -8,9 +8,13 @@ import QuantityCalc from '../components/quantityCalc/quantityCalc';
 const QuantityCalcPage = () => {
   return (
     <div className={styles['quantity-page-container']}>
-        <Header/>
-        <QuantityCalc />
-        <Footer />
+        <div className={styles['wrapper-one']}>
+          <Header/>
+          <QuantityCalc />
+        </div>
+        <Footer 
+          className={styles['footer-cont']}
+        />
     </div>
 
   )

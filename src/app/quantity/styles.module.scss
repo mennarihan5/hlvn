@@ -1,7 +1,14 @@
 @import '../styles/main.scss';
 
 .quantity-page-container {
+    width: 100%;
+    // border: none;
+}
+.wrapper-one {
     background-color: $superLightGrey;
     padding: 0.1% 2%;
     margin: -1%;
+}
+.footer-cont {
+    
 }

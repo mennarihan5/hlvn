@@ -2,6 +2,7 @@
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .footer-contianer {
@@ -9,4 +10,47 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 1rem;
+  padding: 3% 2% 1.5% 2%;
+}
+
+.reset-save-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+}
+
+.reset, .save {
+  width: 5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.87rem;
+  cursor: pointer;
+}
+
+.reset {
+  background-color: #FFFFFF;
+  border: 1px solid #013D41;
+  color: #013D41;
+}
+
+.save {
+  background-color: #013D41;
+  color: #FFFFFF;
+}
+
+.calculate {
+  width: 8.3rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #0A5D7F;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.87rem;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.module.css.map */

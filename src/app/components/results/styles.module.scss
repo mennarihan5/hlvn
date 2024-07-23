@@ -1,0 +1,42 @@
+@import '../../styles/main.scss';
+
+.results-container {
+    @include dFlex(column, start, left);
+    width: 22rem;
+    height: 43rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: $white;
+}
+.title-wrapper {
+    @include dFlex(row, space-between, center);
+    // background-color: pink;
+    padding: 0 5%;
+    background-color: $superLightGrey;
+    border: 1px solid $lightGrey3;
+    border-radius: 8px;
+    margin: 2%;
+    height: 2.5rem;
+}
+.results-title {
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+.results {
+    @include dFlex(column, center, left);
+    padding: 3%;
+    gap: 0.7rem;
+    background-color: $lightBlue;
+}
+.result-item {
+    background-color: $white;
+    border-radius: 8px;
+    padding: 0 3.5%;
+    height: auto;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: $darkGrey;
+}
+.arrow-icon {
+    cursor: pointer;
+}
