@@ -10,8 +10,8 @@
   flex-direction: column;
   justify-content: start;
   align-items: left;
-  width: 22rem;
-  height: 43rem;
+  width: 28rem;
+  height: 43.5rem;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   background-color: #FFFFFF;
@@ -41,6 +41,8 @@
   justify-content: center;
   align-items: left;
   padding: 3%;
+  margin: 2%;
+  border-radius: 8px;
   gap: 0.7rem;
   background-color: #E1F4FD;
 }
@@ -51,7 +53,6 @@
   padding: 0 3.5%;
   height: auto;
   font-weight: 500;
-  font-size: 0.8rem;
   color: #454545;
 }
 
